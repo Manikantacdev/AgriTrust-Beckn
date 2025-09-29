@@ -210,6 +210,60 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Beckn Network Partners */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Beckn Network Partners
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Discover products across our network of trusted marketplace partners
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Link to="/siggy" className="group">
+              <Card className="h-full border-2 border-border/50 hover:border-green-200 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="p-8 text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">S</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-green-600 transition-colors">
+                    Siggy Marketplace
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Premium agricultural products and services from trusted providers
+                  </p>
+                  <Badge variant="secondary" className="bg-green-100 text-green-700">
+                    Connected via Beckn
+                  </Badge>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/jomoto" className="group">
+              <Card className="h-full border-2 border-border/50 hover:border-orange-200 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="p-8 text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">J</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-orange-600 transition-colors">
+                    Jomoto Marketplace
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Quality agricultural supplies and equipment for modern farming
+                  </p>
+                  <Badge variant="secondary" className="bg-orange-100 text-orange-700">
+                    Connected via Beckn
+                  </Badge>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">

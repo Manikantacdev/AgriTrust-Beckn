@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge";
 import { Star, MapPin, User } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 
 interface ProductCardProps {
   id: string;
@@ -29,6 +30,7 @@ const ProductCard = ({
   description,
   isService = false
 }: ProductCardProps) => {
+  const { toast } = useToast();
   return (
     <Card className="group overflow-hidden border border-border/50 bg-card hover:shadow-medium transition-all duration-300 hover:-translate-y-1">
       <CardHeader className="p-0">
@@ -81,12 +83,33 @@ const ProductCard = ({
         </div>
       </CardContent>
 
-      <CardFooter className="p-4 pt-0">
+      <CardFooter className="p-4 pt-0 flex gap-2">
         <Link to={`/service/${id}`} className="flex-1">
           <Button variant="outline" className="w-full">
             View Details
           </Button>
         </Link>
+        <Button 
+          variant="default" 
+          className="flex-1"
+          onClick={() => {
+            // Add to Beckn network functionality
+            const productData = { id, title, price, location, provider, rating, image, category, description, isService };
+            localStorage.setItem(`beckn-product-${id}`, JSON.stringify(productData));
+            
+            // Show success toast
+            toast({
+              title: "Added to Beckn Network",
+              description: `${title} is now available on Siggy and Jomoto marketplaces`,
+            });
+            
+            // Trigger event for other components to update
+            const event = new CustomEvent('beckn-add', { detail: productData });
+            window.dispatchEvent(event);
+          }}
+        >
+          Add to Beckn
+        </Button>
       </CardFooter>
     </Card>
   );

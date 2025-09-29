@@ -16,6 +16,8 @@ import AboutNetworkPage from "./pages/AboutNetworkPage";
 import ProviderOnboardingPage from "./pages/ProviderOnboardingPage";
 import HelpSupportPage from "./pages/HelpSupportPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import SiggyMarketplacePage from "./pages/SiggyMarketplacePage";
+import JomotoMarketplacePage from "./pages/JomotoMarketplacePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +42,8 @@ const App = () => (
               <Route path="/provider-onboarding" element={<ProviderOnboardingPage />} />
               <Route path="/help" element={<HelpSupportPage />} />
               <Route path="/privacy" element={<PrivacyPolicyPage />} />
+              <Route path="/siggy" element={<SiggyMarketplacePage />} />
+              <Route path="/jomoto" element={<JomotoMarketplacePage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
