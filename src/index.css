@@ -8,35 +8,65 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Agricultural earth-tones and natural colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 30 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 30 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 30 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Agricultural green primary */
+    --primary: 120 45% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 120 35% 35%;
+    --primary-dark: 120 50% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm earth secondary */
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 30 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Natural muted tones */
+    --muted: 45 15% 95%;
+    --muted-foreground: 30 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Agricultural accent */
+    --accent: 85 40% 85%;
+    --accent-foreground: 120 45% 25%;
+
+    /* Trust blue variant */
+    --trust: 210 75% 45%;
+    --trust-foreground: 0 0% 98%;
+
+    /* Warm earth brown */
+    --earth: 25 35% 55%;
+    --earth-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 90%;
+    --input: 45 20% 90%;
+    --ring: 120 45% 25%;
 
-    --radius: 0.5rem;
+    /* Design system tokens */
+    --radius: 0.75rem;
+    
+    /* Agricultural gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(120 45% 25%), hsl(120 35% 35%));
+    --gradient-earth: linear-gradient(135deg, hsl(25 35% 55%), hsl(35 30% 45%));
+    --gradient-fresh: linear-gradient(135deg, hsl(85 40% 85%), hsl(95 35% 75%));
+    
+    /* Elegant shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(120 45% 25% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(120 45% 25% / 0.15);
+    --shadow-strong: 0 16px 40px -12px hsl(120 45% 25% / 0.2);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -65,24 +95,38 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 120 35% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 120 25% 45%;
+    --primary-dark: 120 45% 25%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 25 15% 25%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 10% 15%;
+    --muted-foreground: 30 10% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 30 15% 20%;
     --accent-foreground: 210 40% 98%;
+
+    --trust: 210 65% 55%;
+    --trust-foreground: 0 0% 98%;
+
+    --earth: 25 25% 45%;
+    --earth-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 30 15% 20%;
+    --input: 30 15% 20%;
+    --ring: 120 35% 35%;
+    
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(120 35% 35%), hsl(120 25% 45%));
+    --gradient-earth: linear-gradient(135deg, hsl(25 25% 45%), hsl(35 20% 35%));
+    --gradient-fresh: linear-gradient(135deg, hsl(85 30% 75%), hsl(95 25% 65%));
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
