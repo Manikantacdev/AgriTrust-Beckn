@@ -62,16 +62,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm">
-              <ShoppingCart className="mr-2 h-4 w-4" />
-              Cart
-            </Button>
-            <Button size="sm" className="bg-gradient-hero hover:opacity-90">
-              Sign In
-            </Button>
-          </div>
+          {/* Removed Desktop Actions */}
 
           {/* Mobile Menu Button */}
           <Button
@@ -104,15 +95,7 @@ const Navigation = () => {
                   <span>{item.label}</span>
                 </Link>
               ))}
-              <div className="flex flex-col space-y-2 pt-2 border-t border-border">
-                <Button variant="outline" className="justify-start">
-                  <ShoppingCart className="mr-2 h-4 w-4" />
-                  Cart
-                </Button>
-                <Button className="justify-start bg-gradient-hero hover:opacity-90">
-                  Sign In
-                </Button>
-              </div>
+              {/* Removed Mobile Actions */}
             </div>
           </div>
         )}

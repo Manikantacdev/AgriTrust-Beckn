@@ -15,6 +15,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-agricultural-landscape.jpg";
+import tomatoesImage from "@/assets/tomatoes.jpg";
+import tractorImage from "@/assets/tractor.jpg";
+import riceSeedsImage from "@/assets/rice-seeds.jpg";
 
 const HomePage = () => {
   const features = [
@@ -50,7 +53,7 @@ const HomePage = () => {
       location: "Maharashtra, India",
       provider: "Green Valley Farms",
       rating: 4.8,
-      image: "/placeholder.svg",
+      image: tomatoesImage,
       category: "Fresh Produce",
       description: "Fresh organic tomatoes grown without pesticides"
     },
@@ -61,7 +64,7 @@ const HomePage = () => {
       location: "Punjab, India",
       provider: "AgriMech Solutions",
       rating: 4.9,
-      image: "/placeholder.svg",
+      image: tractorImage,
       category: "Farm Services",
       description: "Modern tractor rental with operator included",
       isService: true
@@ -73,7 +76,7 @@ const HomePage = () => {
       location: "Haryana, India",
       provider: "Seed Corp",
       rating: 4.7,
-      image: "/placeholder.svg",
+      image: riceSeedsImage,
       category: "Seeds",
       description: "High-yield disease-resistant rice seeds"
     }

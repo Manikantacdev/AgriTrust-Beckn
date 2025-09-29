@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, MapPin, User, ShoppingCart } from "lucide-react";
+import { Star, MapPin, User } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface ProductCardProps {
@@ -81,16 +81,12 @@ const ProductCard = ({
         </div>
       </CardContent>
 
-      <CardFooter className="p-4 pt-0 flex gap-2">
+      <CardFooter className="p-4 pt-0">
         <Link to={`/service/${id}`} className="flex-1">
           <Button variant="outline" className="w-full">
             View Details
           </Button>
         </Link>
-        <Button size="sm" className="bg-gradient-hero hover:opacity-90">
-          <ShoppingCart className="h-4 w-4 mr-1" />
-          Add
-        </Button>
       </CardFooter>
     </Card>
   );

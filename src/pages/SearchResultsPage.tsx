@@ -5,6 +5,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import ProductCard from "@/components/ProductCard";
 import { Search, Filter, MapPin, SlidersHorizontal } from "lucide-react";
+import tomatoesImage from "@/assets/tomatoes.jpg";
+import tractorImage from "@/assets/tractor.jpg";
+import riceSeedsImage from "@/assets/rice-seeds.jpg";
+import wheatImage from "@/assets/wheat.jpg";
+import soilTestingImage from "@/assets/soil-testing.jpg";
+import fertilizerImage from "@/assets/fertilizer.jpg";
 
 const SearchResultsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,7 +26,7 @@ const SearchResultsPage = () => {
       location: "Maharashtra, India",
       provider: "Green Valley Farms",
       rating: 4.8,
-      image: "/placeholder.svg",
+      image: tomatoesImage,
       category: "Fresh Produce",
       description: "Fresh organic tomatoes grown without pesticides"
     },
@@ -31,7 +37,7 @@ const SearchResultsPage = () => {
       location: "Punjab, India",
       provider: "AgriMech Solutions",
       rating: 4.9,
-      image: "/placeholder.svg",
+      image: tractorImage,
       category: "Farm Services",
       description: "Modern tractor rental with operator included",
       isService: true
@@ -43,7 +49,7 @@ const SearchResultsPage = () => {
       location: "Haryana, India",
       provider: "Seed Corp",
       rating: 4.7,
-      image: "/placeholder.svg",
+      image: riceSeedsImage,
       category: "Seeds",
       description: "High-yield disease-resistant rice seeds"
     },
@@ -54,7 +60,7 @@ const SearchResultsPage = () => {
       location: "Uttar Pradesh, India",
       provider: "Golden Farms",
       rating: 4.6,
-      image: "/placeholder.svg",
+      image: wheatImage,
       category: "Fresh Produce",
       description: "Premium quality wheat harvested this season"
     },
@@ -65,7 +71,7 @@ const SearchResultsPage = () => {
       location: "Karnataka, India",
       provider: "AgriLab Solutions",
       rating: 4.8,
-      image: "/placeholder.svg",
+      image: soilTestingImage,
       category: "Farm Services",
       description: "Comprehensive soil analysis and recommendations",
       isService: true
@@ -77,7 +83,7 @@ const SearchResultsPage = () => {
       location: "Kerala, India",
       provider: "EcoGrow",
       rating: 4.7,
-      image: "/placeholder.svg",
+      image: fertilizerImage,
       category: "Seeds",
       description: "Natural organic fertilizer for better crop yield"
     }
