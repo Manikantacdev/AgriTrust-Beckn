@@ -6,6 +6,7 @@ import { Star, MapPin, User, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import riceSeedsImage from "@/assets/rice-seeds.jpg";
 import fertilizerImage from "@/assets/fertilizer.jpg";
+import tractorImage from "@/assets/tractor.jpg";
 
 const JomotoMarketplacePage = () => {
   const [becknProducts, setBecknProducts] = useState<any[]>([]);
@@ -32,6 +33,17 @@ const JomotoMarketplacePage = () => {
       image: fertilizerImage,
       category: "Fertilizers",
       description: "100% organic fertilizer for sustainable farming"
+    },
+    {
+      id: "jomoto-3",
+      title: "Jomoto Farm Equipment",
+      price: "₹15000",
+      location: "Punjab, India",
+      provider: "Jomoto Machinery",
+      rating: 4.5,
+      image: tractorImage,
+      category: "Equipment",
+      description: "Durable and efficient farm equipment for all your needs."
     }
   ];
 

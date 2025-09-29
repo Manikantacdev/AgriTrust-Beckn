@@ -86,6 +86,29 @@ const SearchResultsPage = () => {
       image: fertilizerImage,
       category: "Seeds",
       description: "Natural organic fertilizer for better crop yield"
+    },
+    {
+      id: "7",
+      title: "Pesticide Spraying Service",
+      price: "₹1500/acre",
+      location: "Andhra Pradesh, India",
+      provider: "Crop Care Services",
+      rating: 4.5,
+      image: tractorImage,
+      category: "Farm Services",
+      description: "Efficient and safe pesticide spraying for all types of crops.",
+      isService: true
+    },
+    {
+      id: "8",
+      title: "Hybrid Maize Seeds",
+      price: "₹250/kg",
+      location: "Telangana, India",
+      provider: "Deccan Seeds",
+      rating: 4.8,
+      image: riceSeedsImage,
+      category: "Seeds",
+      description: "High-yielding hybrid maize seeds for a bountiful harvest."
     }
   ];
 

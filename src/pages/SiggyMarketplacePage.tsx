@@ -6,6 +6,7 @@ import { Star, MapPin, User, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import tomatoesImage from "@/assets/tomatoes.jpg";
 import wheatImage from "@/assets/wheat.jpg";
+import fertilizerImage from "@/assets/fertilizer.jpg";
 
 const SiggyMarketplacePage = () => {
   const [becknProducts, setBecknProducts] = useState<any[]>([]);
@@ -32,6 +33,17 @@ const SiggyMarketplacePage = () => {
       image: wheatImage,
       category: "Grains",
       description: "High-quality grains sourced directly from farmers"
+    },
+    {
+      id: "siggy-3",
+      title: "Siggy Organic Fertilizers",
+      price: "₹90/kg",
+      location: "Kerala, India",
+      provider: "Siggy Organics",
+      rating: 4.8,
+      image: fertilizerImage,
+      category: "Fertilizers",
+      description: "Boost your crop yield with our premium organic fertilizers."
     }
   ];
 

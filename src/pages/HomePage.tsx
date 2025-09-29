@@ -18,6 +18,9 @@ import heroImage from "@/assets/hero-agricultural-landscape.jpg";
 import tomatoesImage from "@/assets/tomatoes.jpg";
 import tractorImage from "@/assets/tractor.jpg";
 import riceSeedsImage from "@/assets/rice-seeds.jpg";
+import wheatImage from "@/assets/wheat.jpg";
+import fertilizerImage from "@/assets/fertilizer.jpg";
+import soilTestingImage from "@/assets/soil-testing.jpg";
 
 const HomePage = () => {
   const features = [
@@ -79,6 +82,40 @@ const HomePage = () => {
       image: riceSeedsImage,
       category: "Seeds",
       description: "High-yield disease-resistant rice seeds"
+    },
+    {
+      id: "4",
+      title: "Organic Wheat",
+      price: "₹25/kg",
+      location: "Uttar Pradesh, India",
+      provider: "Ganga Valley Farms",
+      rating: 4.6,
+      image: wheatImage,
+      category: "Fresh Produce",
+      description: "High-quality organic wheat for milling"
+    },
+    {
+      id: "5",
+      title: "NPK Fertilizer",
+      price: "₹1200/bag",
+      location: "Gujarat, India",
+      provider: "Farm Inputs Co.",
+      rating: 4.5,
+      image: fertilizerImage,
+      category: "Fertilizers",
+      description: "Balanced NPK fertilizer for all crops"
+    },
+    {
+      id: "6",
+      title: "Soil Testing Service",
+      price: "₹800/sample",
+      location: "Karnataka, India",
+      provider: "Lab Services",
+      rating: 4.9,
+      image: soilTestingImage,
+      category: "Farm Services",
+      description: "Comprehensive soil testing and analysis",
+      isService: true
     }
   ];
 
@@ -100,7 +137,7 @@ const HomePage = () => {
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Connecting Agriculture Through 
-              <span className="block text-accent-foreground">Decentralized Trust</span>
+              <span className="block text-white">Decentralized Trust</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Join India's largest decentralized agricultural marketplace. Connect directly with farmers, 
@@ -114,7 +151,7 @@ const HomePage = () => {
                 </Button>
               </Link>
               <Link to="/provider-onboarding">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-white/90 shadow-medium">
                   Become a Provider
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -280,7 +317,7 @@ const HomePage = () => {
               </Button>
             </Link>
             <Link to="/search">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-primary hover:bg-white/10">
                 Browse Products
               </Button>
             </Link>
